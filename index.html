@@ -14,7 +14,7 @@
 </head>
 <body class="container-fluid">
     <header>
-        <h1 class="py-3">Webárúház</h1>
+        <h1 class="py-3">Webáruház</h1>
         <nav class="navbar bg-light navbar-expand-sm ">
             <div class="container-fluid">
             <ul class="navbar-nav">
@@ -31,8 +31,14 @@
         </nav>
     </header>
         <main class="row">
-            <aside class="col">
-                <p>aside1</p>
+            <aside class="col-3 text-start">
+                <p><small>keresési feltételek</small></p>
+            <div>
+                <label for="nev" class="form-label">A termék neve:</label>
+                <input type="nev" class="form-control" id="nev" placeholder="A termék neve" name="nev">
+            </div>
+                <p>Szűrés ár szerint:</p>
+                <input type="range" class="form-range">
             </aside>
 
             <article class="col-6">
@@ -44,7 +50,7 @@
             </aside>
         </main>
    
-    <footer>
+    <footer class="row">
         <p>footer</p>
     </footer>
 </body>
